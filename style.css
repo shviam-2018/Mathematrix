@@ -26,6 +26,10 @@ nav {
     margin-left: auto;
 }
 
+.brand-name {
+    margin-right: 1100px;
+}
+
 .menu ul {
     list-style: none;
     display: flex;
@@ -132,3 +136,19 @@ nav {
     color: #339DFF;
     box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
   }
+
+  .footer {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 10px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media only screen and (max-width: 411px) {
+    /* Example: Resize the navigation menu font size for smaller screens */
+    .menu ul li a {
+        font-size: 14px;
+    }
+}
