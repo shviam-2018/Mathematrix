@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematrix - Questions</title>
+    <link rel="stylesheet" href="qustions.css">
+    <link rel="icon" class="circular-image" href="assets/Mathematrix-logo.png">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <nav>
+        <div class="logo">
+            <img src="/assets/Mathematrix-logo.png" alt="Mathematrix Logo" class="circular-image">
+        </div>
+        <div class="brand-name">
+            <h1>Mathematrix</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/404.html">About</a></li>
+                <li><a href="/404.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+        <div class="question-container">
+            <h2 id="question">Question: </h2>
+           <input type="text" id="answer" placeholder="Enter your answer">
+            <button onclick="checkAnswer()">Submit</button>
+            <button onclick="development()">Dev mode</button> <!-- Button to trigger the development function -->
+     </div>
+     <div class="score-container">
+         <h2>Score: <span id="score">0</span></h2>
+     </div>
+     <div class="timer-container">
+         <h2>Time Left: <span id="timer">60</span> seconds</h2>
+     </div>
+    </section>
+
+
+   <!--after game status-->
+<div class="after-game-status" id="after-game-status">
+    <h3>Game Status</h3>
+    <h1>High score: </h1> <p id="high-score">0</p>
+</div>
+
+
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <p>&copy; 2024 Mathematrix</p>
+    </footer>
+
+    <script src="qustions.js"></script>
+</body>
+</html>
