@@ -4,6 +4,37 @@ let intervalId;
 let correctAnswer;
 let highScore = 0;
 
+// Function to set a cookie with the given name, value, and expiration date
+function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
+
+// Function to get a cookie value by name
+function getCookie(name) {
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const cookies = decodedCookie.split(';');
+    for(let i = 0; i < cookies.length; i++) {
+        let cookie = cookies[i];
+        while (cookie.charAt(0) === ' ') {
+            cookie = cookie.substring(1);
+        }
+        if (cookie.indexOf(name) === 0) {
+            return cookie.substring(name.length + 1);
+        }
+    }
+    return "";
+}
+
+// Load high score from cookie when the page loads
+window.onload = function() {
+    highScore = parseInt(getCookie("highScore")) || 0;
+    document.getElementById('high-score').innerText = highScore;
+};
+
+// Function to generate a question
 function generateQuestion() {
     const num1 = Math.floor(Math.random() * 9) + 2; 
     const num2 = Math.floor(Math.random() * 9) + 2;
@@ -11,6 +42,7 @@ function generateQuestion() {
     document.getElementById('question').innerText = `Question: ${num1} x ${num2} = ?`;
 }
 
+// Function to check the user's answer
 function checkAnswer() {
     if (timer > 0) { // Check if the timer is still running
         const userAnswer = parseInt(document.getElementById('answer').value);
@@ -23,6 +55,7 @@ function checkAnswer() {
     }
 }
 
+// Function to handle development mode
 function development() {
     const userAnswer = document.getElementById('answer').value;
     if (userAnswer === "110308") {
@@ -32,10 +65,12 @@ function development() {
     }
 }
 
+// Function to start the timer
 function startTimer() {
     intervalId = setInterval(updateTimer, 1000);
 }
 
+// Function to update the timer
 function updateTimer() {
     timer--;
     document.getElementById('timer').innerText = timer;
@@ -45,10 +80,13 @@ function updateTimer() {
     }
 }
 
+// Function to end the game
 function endGame() {
     if (score > highScore) {
         highScore = score;
         document.getElementById('high-score').innerText = highScore;
+        // Save the new high score in a cookie
+        setCookie("highScore", highScore, 30); // Expires in 30 days
     }
     // Display the after game status
     document.getElementById('after-game-status').style.display = 'block';
