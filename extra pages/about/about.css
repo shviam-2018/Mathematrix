@@ -1,0 +1,93 @@
+/*nav bar style*/
+.circular-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+nav {
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.menu {
+  margin-left: auto;
+}
+
+.brand-name {
+  margin-right: 1100px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.menu ul li {
+  padding: 5px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.profile {
+  text-align: center;
+  margin-right: 20px;
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.bio {
+  flex: 1;
+}
+
+.bio h2 {
+  color: #333;
+}
+
+.bio p {
+  color: #666;
+  line-height: 1.6;
+}
