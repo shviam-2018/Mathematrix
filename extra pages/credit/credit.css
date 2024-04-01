@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.credits-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.credits-list li {
+    margin-bottom: 10px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.username {
+    color: #666;
+    margin-right: 10px;
+}
+
+.profile-link {
+    color: blue;
+    text-decoration: none;
+}
+
+.profile-link:hover {
+    text-decoration: underline;
+}
