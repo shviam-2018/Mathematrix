@@ -6,45 +6,38 @@
 }
 
 nav {
-    background-color: #f2f2f2;
-    color: #333;
-    padding: 10px;
-    display: flex;
-    align-items: center;
+  background-color: #f2f2f2;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
-.logo {
-    margin-right: auto;
+.brand-name h1 {
+  margin-right: 780px;
 }
 
 .logo img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.menu {
-    margin-left: auto;
-}
-
-.brand-name {
-    margin-right: 1100px;
+  margin: 0;
 }
 
 .menu ul {
-    list-style: none;
-    display: flex;
-    gap: 50px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu ul li {
-    padding: 5px;
+  display: inline;
+  margin-right: 20px;
 }
 
 .menu ul li a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: black;
 }
+
 
 /*hero style*/
 .hero {
