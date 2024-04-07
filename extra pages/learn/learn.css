@@ -1,0 +1,75 @@
+/* nav bar style */
+nav {
+    background-color: #f2f2f2;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .brand-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .brand-name {
+    display: grid;
+    place-items: center;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .menu ul li a:hover {
+    color: blue; 
+  }
+/* styles for the multiplication table */
+.table-container {
+  overflow-x: auto;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+.table-btm button {
+    display: inline-block;
+    margin-right: 10px;
+    background: #339DFF;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 38px;
+    border-radius: 50px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 170px;
+    text-align: center;
+  }
+.table-btm {
+    margin-top: 20px;
+}

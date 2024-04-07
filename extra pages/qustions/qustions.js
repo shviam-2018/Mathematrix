@@ -89,7 +89,7 @@ function endGame() {
         setCookie("highScore", highScore, 30); // Expires in 30 days
     }
     // Display the after game status
-    document.getElementById('after-game-status').style.display = 'block';
+    document.getElementById('after-game-status');
     alert(`Time's up! Your final score is ${score}`);
     // You can redirect the user to another page or perform any other action here
 }
