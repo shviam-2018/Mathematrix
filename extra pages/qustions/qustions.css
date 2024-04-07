@@ -89,7 +89,7 @@ h2 {
 
 /* Initially hide the after game status */
 .after-game-status {
-    display: none;
+    display: block;
     text-align: center; /* Center-align the content */
     margin-top: 50px; /* Add some top margin for spacing */
 }

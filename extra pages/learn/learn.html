@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="learn.js"></script>
+  <link rel="stylesheet" href="learn.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Tables</title>
+  <link rel="icon" class="circular-image" href="/assets/Mathematrix-logo.png">
+</head>
+<body>
+<!-- Navigation bar -->
+<nav>
+    <div class="logo">
+        <img src="/assets/Mathematrix-logo.png" alt="Mathematrix Logo" class="circular-image">
+    </div>
+    <div class="brand-name">
+        <h1>Mathematrix</h1>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/extra pages/about/about.html">About</a></li>
+            <li><a href="/extra pages/contact/contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!--table-->
+  <div class="table-btm">
+    <button onclick="generateTable(2)">Table of 2</button>
+    <button onclick="generateTable(3)">Table of 3</button>
+    <button onclick="generateTable(4)">Table of 4</button>
+    <button onclick="generateTable(5)">Table of 5</button>
+    <button onclick="generateTable(6)">Table of 6</button>
+    <button onclick="generateTable(7)">Table of 7</button>
+    <button onclick="generateTable(8)">Table of 8</button>
+    <button onclick="generateTable(9)">Table of 9</button>
+    <button onclick="generateTable(10)">Table of 10</button>
+  </div>
+  
+  <div class="table-container">
+    <table id="multiplication-table">
+      <!-- Table will be generated here using JavaScript -->
+    </table>
+  </div>
+</body>
+</html>
