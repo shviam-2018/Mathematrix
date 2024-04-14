@@ -32,7 +32,6 @@
             <h2 id="question">Question: </h2>
            <input type="text" id="answer" placeholder="Enter your answer">
             <button onclick="checkAnswer()">Submit</button>
-            <button onclick="development()">Dev mode</button> <!-- Button to trigger the development function -->
      </div>
      <div class="score-container">
          <h2>Score: <span id="score">0</span></h2>
@@ -44,12 +43,17 @@
 
 
    <!--after game status-->
-<div class="after-game-status" id="after-game-status">
-    <h3>Game Status</h3>
-    <h1>High score: </h1> <p id="high-score">0</p>
-</div>
+    <div class="after-game-status" id="after-game-status">
+        <h3>Game Status</h3>
+        <h1>High score: </h1> <p id="high-score">0</p>
+    </div>
 
-
+    <!--extra options-->
+    <div class="extra-options">
+        <a href="/index.html"><button class="button">return home</button></a>
+        <br>
+        <button onclick="playAgain()">Play Again</button>
+    </div>
 
     <!-- Footer section -->
     <footer class="footer">

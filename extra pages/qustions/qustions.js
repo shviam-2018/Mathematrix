@@ -12,7 +12,7 @@ function setCookie(name, value, days) {
     document.cookie = name + "=" + value + ";" + expires + ";path=/";
 }
 
-// Function to get a cookie value by name
+// Function to read cookie with the given name
 function getCookie(name) {
     const decodedCookie = decodeURIComponent(document.cookie);
     const cookies = decodedCookie.split(';');
@@ -55,16 +55,6 @@ function checkAnswer() {
     }
 }
 
-// Function to handle development mode
-function development() {
-    const userAnswer = document.getElementById('answer').value;
-    if (userAnswer === "110308") {
-        score += 100;
-        document.getElementById('score').innerText = score;
-        timer = 5;
-    }
-}
-
 // Function to start the timer
 function startTimer() {
     intervalId = setInterval(updateTimer, 1000);
@@ -98,7 +88,18 @@ function endGame() {
 generateQuestion();
 startTimer();
 
-// Add event listener for the Enter key
+// Play again 
+function playAgain() {
+    score = 0;
+    timer = 60;
+    document.getElementById('score').innerText = score;
+    document.getElementById('timer').innerText = timer;
+    clearInterval(intervalId);
+    generateQuestion();
+    startTimer();
+}
+
+// Add event listener for the Enter key, so you can submit the answer by pressing Enter to reduce wast
 document.getElementById('answer').addEventListener('keyup', function(event) {
     if (event.keyCode === 13) {
         checkAnswer();

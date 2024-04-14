@@ -87,22 +87,28 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Initially hide the after game status */
+/* Style the after game status */
 .after-game-status {
     display: block;
-    text-align: center; /* Center-align the content */
-    margin-top: 50px; /* Add some top margin for spacing */
+    text-align: center; 
+    margin-top: 50px; 
 }
 
-/* Style the after game status */
 .after-game-status h1 {
-    font-size: 36px; /* Increase font size for emphasis */
-    margin-bottom: 20px; /* Add some bottom margin for spacing */
-    text-align: center; /* Center-align the heading */
+    font-size: 36px; 
+    margin-bottom: 20px; 
+    text-align: center; 
 }
 
 .after-game-status p {
     font-size: 18px;
     margin-top: 0;
-    text-align: center; /* Center-align the paragraph */
+    text-align: center; 
+}
+
+/* Style the extra-options */
+.extra-options {
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
 }
