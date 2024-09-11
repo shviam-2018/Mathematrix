@@ -41,7 +41,7 @@ place-items: center;
 }
 
 .menu ul li a:hover {
-  color: blue; /* Change color on hover as desired */
+  color: blue; 
 }
 
 /*hero style*/
