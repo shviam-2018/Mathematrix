@@ -29,7 +29,7 @@ To install or run the website locally, follow these instructions:
 
 1. Clone this repository:
    ```
-   git clone https://github.com/shviam-2018/your-repo.git
+   git clone https://github.com/shviam-2018/Mathematrix.git
    ```
 
 2. Navigate to the project directory:
